@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
             "skills": "Skills",
             "contact": "Contact",
             "hero": "Hello, I'm Patryk Kulpok",
-            "heroDesc":"I develop backends that run smoothly and reliably.                My specialty? Django, SQL, and performance optimization. I ensure that systems are not only functional but also highly efficient. Currently, I’m exploring Artificial Intelligence and Machine Learning because I believe data is the fuel of the future. My goal? To build fast, stable, and modern technology solutions." ,
+            "heroDesc":"I develop backends that run smoothly and reliably.                My speciality? Django, SQL, and performance optimization. I ensure that systems are not only functional but also highly efficient. Currently, I’m exploring Artificial Intelligence and Machine Learning because I believe data is the fuel of the future. My goal? To build fast, stable, and modern technology solutions." ,
             "aboutDesc1":"My passion for programming began long before my professional journey started. However, it was nearly two years of working as a Backend Developer that allowed me to fully spread my wings in the world of technology. I specialized in PowerBuilder and SQL Anywhere, designing and implementing robust backend architectures, optimizing SQL queries, and ensuring the performance and stability of database systems.",
             "aboutDesc2": "Currently, I am deeply engaged in the Python and Django ecosystem, continuously expanding my backend development expertise. My ambition is to master Artificial Intelligence and Machine Learning, exploring advanced technologies such as NumPy, Pandas, and Matplotlib to create innovative, data-driven solutions.",
-            "aboutDesc3": "As a Computer Science graduate (B.Eng.), I am constantly refining my understanding of algorithms, system architecture, and data structures. My ultimate goal is to develop intelligent, high-performance systems that drive innovation and push the boundaries of modern technology.",
+            "aboutDesc3": "As a computer science graduate (engineer's degree), I am constantly improving my knowledge of algorithms, system architecture, and data structures. My aspiration is to build intelligent, high-performance systems that not only drive innovation but also push the boundaries of modern technology.",
             "projects": "Projects",
             "taskManager": "Task Manager",
             "taskManagerDesc": "Task Manager is a modern web application built with Django (backend) and pure JavaScript and CSS (frontend). It helps users manage projects and tasks efficiently by providing role-based access control, task tracking, and progress monitoring.",
@@ -77,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("about").querySelector("h2").innerText = translations[lang].about;
         document.getElementById("about").querySelectorAll("p")[0].innerText = translations[lang].aboutDesc1;
         document.getElementById("about").querySelectorAll("p")[1].innerText = translations[lang].aboutDesc2;
+        document.getElementById("about").querySelectorAll("p")[2].innerText = translations[lang].aboutDesc3;
         document.getElementById("projects").querySelector("h2").innerText = translations[lang].projects;
     
         const project = document.getElementById("task-manager");

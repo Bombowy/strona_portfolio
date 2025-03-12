@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Patryk Kulpok</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="language-switch">
+                    <img src="flag-en.png" alt="English" id="flag-en">
+                    <img src="flag-pl.png" alt="Polski" id="flag-pl">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <div id="hero-text">
+            <h2>Hello, I'm Patryk Kulpok</h2>
+            <p>My passion for programming began long before my professional journey started. However, it was nearly two years of working as a Backend Developer that allowed me to fully spread my wings in the world of technology. I specialized in PowerBuilder and SQL Anywhere, designing and implementing robust backend architectures, optimizing SQL queries, and ensuring the performance and stability of database systems.</p>
+        </div>
+        <div id="hero-image">
+            <img src="my-photo.jpg" alt="Patryk Kulpok">
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Currently, I am deeply engaged in the Python and Django ecosystem, continuously expanding my backend development expertise. My ambition is to master Artificial Intelligence and Machine Learning, exploring advanced technologies such as NumPy, Pandas, and Matplotlib to create innovative, data-driven solutions.</p>
+        <p>As a Computer Science graduate (B.Eng.), I am constantly refining my understanding of algorithms, system architecture, and data structures. My ultimate goal is to develop intelligent, high-performance systems that drive innovation and push the boundaries of modern technology.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project" id="task-manager">
+            <h3>Task Manager</h3>
+            
+            <div class="project-links">
+                <a href="https://github.com/Bombowy/Task_manager" target="_blank" class="btn">View on GitHub</a>
+                <a href="https://task-manager-l334.onrender.com" target="_blank" class="btn">Live Demo</a>
+            </div>
+    
+            <img src="task-manager.png" alt="Task Manager Screenshot">
+    
+            <p class="description">Task Manager is a modern web application built with Django (backend) and pure JavaScript and CSS (frontend). It helps users manage projects and tasks efficiently by providing role-based access control, task tracking, and progress monitoring.</p>
+    
+            <h4 class="features-title">Key Features:</h4>
+            <ul class="features">
+                <li class="feature-item">Task Management: Create, edit, and delete tasks with status tracking.</li>
+                <li class="feature-item">Roles and Permissions: Role-based access to control project functionalities.</li>
+                <li class="feature-item">Task Comments: Users can add comments for improved collaboration.</li>
+                <li class="feature-item">Project Organization: Group tasks within larger projects.</li>
+                <li class="feature-item">Task Assignment: Assign tasks to specific users.</li>
+                <li class="feature-item">User-Friendly Interface: Dark mode UI with smooth animations.</li>
+            </ul>
+    
+            <h4 class="technologies-title">Technologies:</h4>
+            <p class="technologies">Django, PostgreSQL, JavaScript, CSS.</p>
+    
+            <h4 class="status-title">Status:</h4>
+            <p class="status">🚀 In development – upcoming features include notifications, API integrations, and UX/UI improvements.</p>
+    
+            <h4 class="watch-tutorial-title"></h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/z34vz-y-0V4"  frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Python, Django, SQL, PowerBuilder, Machine Learning, NumPy, Pandas, Matplotlib, SQL Anywhere, Git, C#, JavaScript, HTML, CSS.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: patryk.kulpok@vp.pl</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Patryk Kulpok</p>
+    </footer>
+</body>
+</html>

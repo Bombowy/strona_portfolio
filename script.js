@@ -4,11 +4,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const translations = {
         "en": {
+            "about": "About",
+            "projects": "Projects",
+            "skills": "Skills",
+            "contact": "Contact",
             "hero": "Hello, I'm Patryk Kulpok",
-            "heroDesc": "My passion for programming began long before my professional journey started. However, it was nearly two years of working as a Backend Developer that allowed me to fully spread my wings in the world of technology. I specialized in PowerBuilder and SQL Anywhere, designing and implementing robust backend architectures, optimizing SQL queries, and ensuring the performance and stability of database systems.",
-            "about": "About Me",
-            "aboutDesc1": "Currently, I am deeply engaged in the Python and Django ecosystem, continuously expanding my backend development expertise. My ambition is to master Artificial Intelligence and Machine Learning, exploring advanced technologies such as NumPy, Pandas, and Matplotlib to create innovative, data-driven solutions.",
-            "aboutDesc2": "As a Computer Science graduate (B.Eng.), I am constantly refining my understanding of algorithms, system architecture, and data structures. My ultimate goal is to develop intelligent, high-performance systems that drive innovation and push the boundaries of modern technology.",
+            "heroDesc":"I develop backends that run smoothly and reliably.                My specialty? Django, SQL, and performance optimization. I ensure that systems are not only functional but also highly efficient. Currently, I’m exploring Artificial Intelligence and Machine Learning because I believe data is the fuel of the future. My goal? To build fast, stable, and modern technology solutions." ,
+            "aboutDesc1":"My passion for programming began long before my professional journey started. However, it was nearly two years of working as a Backend Developer that allowed me to fully spread my wings in the world of technology. I specialized in PowerBuilder and SQL Anywhere, designing and implementing robust backend architectures, optimizing SQL queries, and ensuring the performance and stability of database systems.",
+            "aboutDesc2": "Currently, I am deeply engaged in the Python and Django ecosystem, continuously expanding my backend development expertise. My ambition is to master Artificial Intelligence and Machine Learning, exploring advanced technologies such as NumPy, Pandas, and Matplotlib to create innovative, data-driven solutions.",
+            "aboutDesc3": "As a Computer Science graduate (B.Eng.), I am constantly refining my understanding of algorithms, system architecture, and data structures. My ultimate goal is to develop intelligent, high-performance systems that drive innovation and push the boundaries of modern technology.",
             "projects": "Projects",
             "taskManager": "Task Manager",
             "taskManagerDesc": "Task Manager is a modern web application built with Django (backend) and pure JavaScript and CSS (frontend). It helps users manage projects and tasks efficiently by providing role-based access control, task tracking, and progress monitoring.",
@@ -26,14 +30,20 @@ document.addEventListener("DOMContentLoaded", function() {
             "watchTutorial": "Watch the tutorial:",
             "skills": "Skills",
             "contact": "Contact",
-            "email": "Email: patryk.kulpok@vp.pl"
+            "email": "Email: patryk.kulpok@vp.pl",
+            "phone": "Phone: +48 536 882 665"
         },
         "pl": {
-            "hero": "Cześć, jestem Patryk Kulpok",
-            "heroDesc": "Moja pasja do programowania rozpoczęła się na długo przed moją profesjonalną ścieżką kariery. Jednak to niemal dwuletnia praca jako Backend Developer pozwoliła mi w pełni rozwinąć skrzydła w świecie technologii. Specjalizowałem się w PowerBuilderze i SQL Anywhere, projektując i wdrażając solidne architektury backendowe, optymalizując zapytania SQL oraz dbając o wydajność i stabilność systemów bazodanowych.",
             "about": "O mnie",
-            "aboutDesc1": "Obecnie intensywnie rozwijam się w ekosystemie Pythona i Django, stale poszerzając swoją wiedzę w obszarze backendu. Moim celem jest opanowanie sztucznej inteligencji i uczenia maszynowego, eksplorując zaawansowane technologie, takie jak NumPy, Pandas i Matplotlib, aby tworzyć innowacyjne rozwiązania oparte na danych.",
-            "aboutDesc2": "Jako absolwent informatyki (tytuł inżyniera) stale doskonalę swoją wiedzę w zakresie algorytmów, architektury systemów i struktur danych. Moim dążeniem jest budowanie inteligentnych, wysoko wydajnych systemów, które nie tylko napędzają innowacje, ale także przesuwają granice współczesnej technologii.",
+            "projects": "Projekty",
+            "skills": "Umiejętności",
+            "contact": "Kontakt",
+            "hero": "Cześć, jestem Patryk Kulpok",
+            "heroDesc":"Programuję backendy, które działają płynnie i niezawodnie.Moja specjalność? Django, SQL i optymalizacja wydajności. Dbam o to, by systemy były nie tylko funkcjonalne, ale też maksymalnie efektywne.Aktualnie eksploruję Sztuczną Inteligencję i Uczenie Maszynowe, bo wierzę, że dane są paliwem przyszłości. Cel? Tworzyć szybkie, stabilne i nowoczesne rozwiązania technologiczne.",
+            "about": "O mnie",
+            "aboutDesc1": "Moja pasja do programowania rozpoczęła się na długo przed moją profesjonalną ścieżką kariery. Jednak to niemal dwuletnia praca jako Backend Developer pozwoliła mi w pełni rozwinąć skrzydła w świecie technologii. Specjalizowałem się w PowerBuilderze i SQL Anywhere, projektując i wdrażając solidne architektury backendowe, optymalizując zapytania SQL oraz dbając o wydajność i stabilność systemów bazodanowych.",
+            "aboutDesc2": "Obecnie intensywnie rozwijam się w ekosystemie Pythona i Django, stale poszerzając swoją wiedzę w obszarze backendu. Moim celem jest opanowanie sztucznej inteligencji i uczenia maszynowego, eksplorując zaawansowane technologie, takie jak NumPy, Pandas i Matplotlib, aby tworzyć innowacyjne rozwiązania oparte na danych.",
+            "aboutDesc3": "Jako absolwent informatyki (tytuł inżyniera) stale doskonalę swoją wiedzę w zakresie algorytmów, architektury systemów i struktur danych. Moim dążeniem jest budowanie inteligentnych, wysoko wydajnych systemów, które nie tylko napędzają innowacje, ale także przesuwają granice współczesnej technologii.",
             "projects": "Projekty",
             "taskManager": "Task Manager",
             "taskManagerDesc": "Task Manager to nowoczesna aplikacja webowa zbudowana w Django (backend) oraz czystym JavaScript i CSS (frontend). Umożliwia efektywne zarządzanie projektami i zadaniami dzięki systemowi ról, monitorowaniu postępów i kontroli dostępu.",
@@ -51,11 +61,17 @@ document.addEventListener("DOMContentLoaded", function() {
             "watchTutorial": "Obejrzyj tutorial:",
             "skills": "Umiejętności",
             "contact": "Kontakt",
-            "email": "Email: patryk.kulpok@vp.pl"
+            "email": "Email: patryk.kulpok@vp.pl",
+            "phone": "Telefon: +48 536 882 665"
         }
     };
 
     function switchLanguage(lang) {
+        document.querySelector('nav ul li:nth-child(1) a').innerText = translations[lang].about;
+        document.querySelector('nav ul li:nth-child(2) a').innerText = translations[lang].projects;
+        document.querySelector('nav ul li:nth-child(3) a').innerText = translations[lang].skills;
+        document.querySelector('nav ul li:nth-child(4) a').innerText = translations[lang].contact;
+
         document.getElementById("hero-text").querySelector("h2").innerText = translations[lang].hero;
         document.getElementById("hero-text").querySelector("p").innerText = translations[lang].heroDesc;
         document.getElementById("about").querySelector("h2").innerText = translations[lang].about;
@@ -84,7 +100,8 @@ document.addEventListener("DOMContentLoaded", function() {
     
         document.getElementById("skills").querySelector("h2").innerText = translations[lang].skills;
         document.getElementById("contact").querySelector("h2").innerText = translations[lang].contact;
-        document.getElementById("contact").querySelector("p").innerText = translations[lang].email;
+        document.getElementById("contact").querySelector(".email").innerText = translations[lang].email;
+        document.getElementById("contact").querySelector(".phone").innerText = translations[lang].phone;
     }
     
 

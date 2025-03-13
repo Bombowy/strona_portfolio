@@ -31,7 +31,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "skills": "Skills",
             "contact": "Contact",
             "email": "Email: patryk.kulpok@vp.pl",
-            "phone": "Phone: +48 536 882 665"
+            "phone": "Phone: +48 536 882 665",
+            "video_task_manager": "https://www.youtube.com/embed/O0j96oka3Bg"
         },
         "pl": {
             "about": "O mnie",
@@ -62,7 +63,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "skills": "Umiejętności",
             "contact": "Kontakt",
             "email": "Email: patryk.kulpok@vp.pl",
-            "phone": "Telefon: +48 536 882 665"
+            "phone": "Telefon: +48 536 882 665",
+            "video_task_manager": "https://www.youtube.com/embed/qfQuIW7zwCA"
         }
     };
 
@@ -103,6 +105,11 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("contact").querySelector("h2").innerText = translations[lang].contact;
         document.getElementById("contact").querySelector(".email").innerText = translations[lang].email;
         document.getElementById("contact").querySelector(".phone").innerText = translations[lang].phone;
+
+        const ytFrame = document.getElementById("video_task_manager");
+        ytFrame.src = translations[lang].video_task_manager;
+
+
     }
     
 
